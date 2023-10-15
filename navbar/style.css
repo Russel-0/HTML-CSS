@@ -19,12 +19,17 @@ header {
     display: flex;
     gap: 4rem;
     color: black;
-    background-color: #fff;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
     background-color: black;
     color: #fff;
+}
+
+.nav-link {
+    padding: 20px;
+    border-radius: 1rem;
+    background-color: white;
 }
 
 .dropdown {
