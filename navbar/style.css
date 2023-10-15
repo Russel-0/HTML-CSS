@@ -55,3 +55,15 @@ a:hover {
     color: #fff;
     border-radius: 1rem;
 }
+
+@media (max-width: 388px) {
+    header {
+        background-color: #fff;
+        font-size: smaller;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 5px;
+    }
+}
