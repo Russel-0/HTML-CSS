@@ -12,17 +12,29 @@ header {
     align-items: center;
     text-align: center;
     background-color: antiquewhite;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .nav-links, a {
     display: flex;
     gap: 4rem;
     color: black;
+    background-color: #fff;
+}
+
+.nav-links a:hover {
+    background-color: black;
+    color: #fff;
 }
 
 .dropdown {
-    display: block;
+    display: none;
     position: absolute;
-    background-color: antiquewhite;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.nav-link:hover .dropdown{
+    display: block;
+    padding: 20px 50px;
 }
