@@ -87,3 +87,11 @@ form {
     margin-top: 2vh;
 }
 
+form a {
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+    color: #16e8ff;
+}
