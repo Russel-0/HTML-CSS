@@ -34,7 +34,7 @@ body {
 }
 
 .container2 {
-    background: rgb(221, 240, 255);
+    background: rgba(136, 188, 231, 0.3);
     padding: 50px;
     border-radius: 1rem;
     box-shadow: 0.1px 0.1px 20px #daf3ff;
