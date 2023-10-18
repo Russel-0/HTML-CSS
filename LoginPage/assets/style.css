@@ -11,10 +11,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(assets/img/bg.jpg);
+    background-image: radial-gradient(circle, #8675f9, #a36fe9, #b66bd8, #c468c8, #cc68b8, #c477ca, #bb86db, #b194e8, #80b4ff, #3ed0ff, #16e8ff, #5ffbf1);
 }
 
 .container {
-    background: #383838;
-    padding: 50px 20px;
+    background: rgba(136, 188, 231, 0.3);
+    padding: 50px;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 20px;
 }
