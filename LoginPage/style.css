@@ -28,7 +28,7 @@ form h1 {
     font-weight: 600;
     color: #16e8ff;
     font-size: 50px;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 h1:hover {
