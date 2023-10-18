@@ -51,16 +51,16 @@ h1:hover {
     margin-top: 3vh;
     border-radius: 0.5rem;
     border-style: none;
-    background-color: #5ffbf1;
-    color: #8675f9;
+    background-color: #fff;
+    color: #16e8ff;
     transition: all .2s ease-in-out;
     font-weight: 600;
 }
 
 .form button:hover {
     transform: scale(1.1);
-    background-color: #fff;
-    color: #16e8ff;
+    background-color: #5ffbf1;
+    color: #8675f9;
 }
 
 ::placeholder {
