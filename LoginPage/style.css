@@ -21,8 +21,6 @@ body {
     box-shadow: 0.1px 0.1px 20px;
 }
 
-
-
 form h1 {
     display: flex;
     justify-content: center;
@@ -30,6 +28,12 @@ form h1 {
     font-weight: 600;
     color: #16e8ff;
     font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+h1:hover {
+    transform: rotate(360deg);
+    color: white;
 }
 
 .form input {
@@ -40,6 +44,23 @@ form h1 {
     border-style: none;
     background-color: rgb(61, 61, 61);
     color: white;
+}
+
+.form button {
+    padding: 15px 30px;
+    margin-top: 3vh;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #5ffbf1;
+    color: #8675f9;
+    transition: all .2s ease-in-out;
+    font-weight: 600;
+}
+
+.form button:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #16e8ff;
 }
 
 ::placeholder {
@@ -64,5 +85,5 @@ form {
     align-items: center;
     gap: 1rem;
     margin-top: 2vh;
-    
 }
+
