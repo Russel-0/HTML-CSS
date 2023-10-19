@@ -120,3 +120,36 @@ form a:hover {
 form label {
     color: rgb(0, 0, 0)
 }
+
+@media screen and (max-width: 388px) {
+    body {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 3vh;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 10vh;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 388px;
+        overflow: hidden;
+        margin-bottom: 25%;
+        padding: 0 130px 0 130px;
+    }
+
+    form {
+        display: flex;
+        max-width: 100%;
+    }
+}
