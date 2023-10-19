@@ -32,6 +32,7 @@ body > h1:hover {
 .container {
     background: rgba(136, 188, 231, 0.3);
     padding: 50px;
+    width: 15%;
     border-radius: 1rem;
     box-shadow: 0.1px 0.1px 20px #daf3ff;
 }
@@ -57,13 +58,14 @@ h1:hover {
     margin-top: 3vh;
     border-radius: 0.5rem;
     border-style: none;
-    background-color: rgb(61, 61, 61);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+    outline: none;
 }
 
 .form button {
     padding: 15px 30px;
-    margin-top: 3vh;
+    margin-top: 5vh;
     border-radius: 0.5rem;
     border-style: none;
     background-color: #fff;
@@ -75,11 +77,11 @@ h1:hover {
 .form button:hover {
     transform: scale(1.1);
     background-color: #5ffbf1;
-    color: #8675f9;
+    color: #ffffff;
 }
 
 ::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 form {
@@ -88,25 +90,33 @@ form {
     align-items: center;
 }
 
-.input {
+.remember {
     display: flex;
-    gap: 1rem;
-    margin-top: 5vh;
+    margin-top: 1vh;
+    margin-right: 80px;
+    gap: 5px;
+}
+
+.forgot-pass {
+    margin-top: 2vh;
 }
 
 .new {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 1rem;
     margin-top: 2vh;
 }
 
 form a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 form a:hover {
     text-decoration: underline;
     color: #16e8ff;
+}
+
+form label {
+    color: rgb(0, 0, 0)
 }
