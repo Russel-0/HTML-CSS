@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 5px;
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div>
+        <div style="display: flex; justify-content: space-between;">
+            <h1>Activity 2</h1>
+            <h1>Buzzer</h1>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                    <div>
+                        <h6>P1 Name</h6>
+                        <input type="text" id="txtName">
+                    </div>
+                    <div> 
+                        <h6>P1 Key</h6>
+                        <input type="text" id="txtKey">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <input type="button" value="ready">
+                    <input type="text" id="name">
+                </div>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex;">
+                    <div>
+                        <h6>P2 Name</h6>
+                        <input type="text" id="txtName2">
+                    </div>
+                    <div> 
+                        <h6>P2 Key</h6>
+                        <input type="text" id="txtKey2">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <input type="button" value="ready" >
+                    <input type="text" id="name2">
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <h1>Made by Russel Calderon</h1>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    
+    document.getElementById('txtName');
+
+    document.addEventListener('keydown', function(e) {
+
+        if(e.key == document.getElementById('name').value == document.getElementById('txtName').value)
+    })
+        
+</script>
+</html>
