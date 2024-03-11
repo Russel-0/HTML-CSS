@@ -20,37 +20,13 @@
             <h1>Buzzer</h1>
         </div>
         <div style="display: flex; justify-content: space-around;">
-            <div style="display: flex; flex-direction: column;">
-                <div style="display: flex;">
-                    <div>
-                        <h6>P1 Name</h6>
-                        <input type="text" id="txtName">
-                    </div>
-                    <div> 
-                        <h6>P1 Key</h6>
-                        <input type="text" id="txtKey">
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: column;">
-                    <button id="ready1">ready</button>
-                    <h3 style="border-color: black; background-color: gray; height: 10rem; text-align: center;" id="name1">Player 1</h3>
-                </div>
+            <div style="background-color: red; width: 10rem; height: 10rem; color: aliceblue;">
+                <h1 id="score1">0</h1>
+                <h3>Team 1</h3>
             </div>
-            <div style="display: flex; flex-direction: column;">
-                <div style="display: flex;">
-                    <div>
-                        <h6>P2 Name</h6>
-                        <input type="text" id="txtName2">
-                    </div>
-                    <div> 
-                        <h6>P2 Key</h6>
-                        <input type="text" id="txtKey2">
-                    </div>
-                </div>
-                <div style="display: flex; flex-direction: column;">
-                    <button id="ready2">ready</button>
-                    <h3 style="border-color: black; background-color: gray; height: 10rem; text-align: center;" id="name2">Player 2</h3>
-                </div>
+            <div style="background-color: blue; width: 10rem; height: 10rem; color: aliceblue;">
+                <h1 id="score2">0</h1>
+                <h3>Team 2</h3>
             </div>
         </div>
         <div style="text-align: center;">
@@ -61,46 +37,42 @@
 
 <script>
     
-    let name;
-    let ky;
-    
-    document.getElementById("ready1").onclick = function(){
+    const score1 = document.getElementById('score1');
+    const score2 = document.getElementById('score2');
 
-        name = document.getElementById("txtName").value;
-        document.getElementById("name1").textContent = name;
+    document.addEventListener('keyup', function(e) {
+        if(e.key == 'q'){
+            score1.innerText = Number(score1.innerText) + 1;    
+        }
+    });
 
-        ky = document.getElementById("txtKey").value;
+    document.addEventListener('keyup', function(e) {
+        if(e.key == 'o'){
+            score2.innerText = Number(score2.innerText) + 1;    
+        }
+    });
 
-        document.addEventListener('keydown', function(e) {
-            if(e.key == ky){
-                ky = document.getElementById("name1").style.backgroundColor = "blue";
-            }
-            
-        })
-
-        document.getElementById("ready1").disabled = true;
-    }
-
-    let name1;
-    let ky1;    
-
-
-    document.getElementById("ready2").onclick = function(){
-
-        name1 = document.getElementById("txtName2").value;
-        document.getElementById("name2").textContent = name1;
-
-        ky1 = document.getElementById("txtKey2").value;
-
-        document.addEventListener('keydown', function(e) {
-            if(e.key == ky1){
-                ky1 = document.getElementById("name2").style.backgroundColor = "blue";
-            }
-            
-        })
-
-        document.getElementById("ready2").disabled = true;
-    }   
+    document.addEventListener('keyup', function(e) {
         
+        if(e.key == 'z'){
+            score1.innerText = Number(score1.innerText) - 1;
+
+            if(score1.innerText == -1){
+            score1.innerText = Number(score1.innerText) + 1;
+            }
+        }
+        
+    });
+
+    document.addEventListener('keyup', function(e) {
+        if(e.key == 'l'){
+            score2.innerText = Number(score2.innerText) - 1;
+
+            if(score2.innerText == -1){
+            score2.innerText = Number(score2.innerText) + 1;
+            }    
+        }
+    });
+   
 </script>
 </html>
